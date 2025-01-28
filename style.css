@@ -1,0 +1,256 @@
+#main
+{
+    height: 45%;
+    width: 50%; 
+    border: 2% solid black;
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+
+}
+.parent{
+    display: flex;
+}
+
+.box{
+    border: 1px solid black;
+    /* margin: 5px; */
+    height: 55px;
+    flex-basis: 10%;
+    position: relative;
+    flex-wrap: wrap;
+    display: flex;
+    
+    /* border */
+    /* align-content: center; */
+    /* display: flex; */
+    /* justify-content: space-between; */
+    /* align-content: space-between; */
+    
+    /* align-content: center;  */
+}
+.reverse{
+    flex-direction: row-reverse;
+}
+.simple{
+    flex-direction: row;
+}
+.alternateColor{
+    color: white;
+    background-color: cornflowerblue;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+    /* flex-wrap: wrap; */
+}
+.dice{
+    /* src: url('./img/dice.png'); */
+    height: 450px;
+    width: 250px;
+    border: 2px solid brown;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    /* align-content: space-around; */
+}
+.image{
+    height: 150px;
+    width: 150px;
+    align-self: center;
+}
+.mainDice{
+    align-self: center;
+}
+.subContent{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.center{
+   display: flex;
+    /* border: 4px solid firebrick; */
+   width: 100%;
+   /* height: 30vh;  */
+   flex-wrap: wrap;
+   border: 2px solid teal;
+   justify-content: center;
+   flex-wrap: wrap;
+   margin: 0;
+   padding:0;
+    overflow: auto;
+}
+.heading{
+    align-self: center;
+    font-size: 5rem;
+    font-style: italic;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: cornsilk;
+    text-shadow: 2px  5px green;
+
+   
+
+}
+.snake
+{
+    background-color: red;
+    /* opacity: 0.5; */
+    /* height: 50px; */
+    /* width: 30px; */
+    
+    /* position: absolute; */
+    color: black;
+}
+.ladder
+{
+    background-color: green;
+    /* opacity: 0.4; */
+    color: black;
+}
+.ButtonFlex{
+    display: flex;
+    justify-content: space-around;
+    border: 3px solid thistle;
+    width: 98%;
+    
+}
+/* .right{
+    flex-basis: 40%;
+    background-color: darkgreen;
+    width: 50%;
+    width: 200px;
+}
+.left{
+    flex-basis: 40%;
+    background-color: cornsilk;
+    /* width: 200px; */
+/* } */ 
+
+.button {
+    background-color:darkred; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+  
+  .btnStyle {
+    background-color: white; 
+    color: black; 
+    border: 2px solid darkred;
+  }
+  #num{
+    background-color:darkred; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+    background-color: white; 
+    color: black; 
+    border: 2px solid darkred
+}
+#PlayerTurn
+{
+    background-color:darkred;
+    border: none;
+    color: white;
+    padding: 15px 22px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    height: 40px;
+    width: 90px;
+    cursor: pointer;
+    background-color: white; 
+    color: black; 
+    border: 2px solid darkred
+}
+ /* @media only screen and (min-width: 1400px) {
+    .heading {
+      font-size: 3rem;
+      text-shadow: 2px  3px green;
+    }
+  } */
+  @media only screen and (max-width: 600px) {
+    .heading {
+      font-size: 2rem;
+      text-shadow: 1px  2px green;
+    }
+  }
+  @media only screen and (min-width: 559px) {
+    .heading {
+      font-size: 4vw;
+      text-shadow: 1px  2px green;
+    }
+  }
+  @media only screen and (min-width: 400) {
+    .heading {
+      font-size: 1rem;
+      text-shadow: 1px  2px green;
+    }
+  }
+  .alignPlayer{
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid thistle;
+    height: 50px;
+    width: 100px;
+    align-self: flex-end;
+}
+  .down{
+      align-self: flex-end;
+      justify-content: space-between;
+  }
+  /* @media only screen and (max-width: 130px) {
+    .heading {
+      font-size: 1rem;
+      text-shadow: 1px  2px green;
+    }
+  } */
+  
+  /*
+  @media only screen and (min-width: 1100px) and (max-width: 1200px) {
+    .heading {
+      font-size: 2rem;
+    }
+  }
+  @media only screen and (min-width: 1200px) and (max-width: 1200px) {
+    .heading {
+      font-size: 2rem;
+    }
+  } */
+  /* @media only screen and (min-width: 1200px) {
+    .heading {
+      font-size: 4rem;
+      text-shadow: 2px  5px green;
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    .heading {
+      font-size: 1rem;
+      text-shadow: 1px  3px green;
+    }
+  }
+  @media only screen and (max-width: 800px) {
+    .heading {
+      font-size: 2rem;
+      text-shadow: 2px  5px green;
+    }
+  } */
